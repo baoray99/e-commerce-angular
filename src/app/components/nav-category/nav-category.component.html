@@ -1,0 +1,10 @@
+<div *ngIf="path == '/products'" class="nav-btn">
+  <button
+    class="btn-cate"
+    *ngFor="let btn of cateButton"
+    (click)="filterBtn(btn.type, btn.label)"
+    [ngClass]="{ active: btn.isActive }"
+  >
+    {{ btn.label }}
+  </button>
+</div>

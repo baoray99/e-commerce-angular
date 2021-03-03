@@ -1,0 +1,5 @@
+<div *ngIf="cart$" class="cart-items">
+  <div class="item" *ngFor="let item of cart$ | async">
+    <p>{{ item.name }}</p>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.card {
+  width: 240px;
+  height: 280px;
+  margin: 20px 0 0 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 14px -4px rgba(145, 145, 145, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  .image {
+    height: 190px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+  .detail {
+    padding: 0 20px;
+  }
+  a{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+}

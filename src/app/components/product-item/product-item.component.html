@@ -1,0 +1,13 @@
+<div
+  class="card"
+  [title]="product.name + ' details'"
+  [routerLink]="['/products', product.id]"
+>
+  <div class="box">
+    <img class="image" src="{{ product.image }}" alt="product_image" />
+    <div class="detail">
+      <a>{{ product.name }}</a>
+      <p>Price: {{ product.price | currency }}</p>
+    </div>
+  </div>
+</div>

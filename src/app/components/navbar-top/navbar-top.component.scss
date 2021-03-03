@@ -1,0 +1,31 @@
+.navbar {
+  background: black;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  .title {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    color: crimson;
+  }
+  .btn-checkout {
+    font-family: "Ubuntu";
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      border: 1px solid crimson;
+      background: crimson;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+    }
+  }
+}

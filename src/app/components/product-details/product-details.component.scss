@@ -1,0 +1,42 @@
+.container {
+  display: block;
+  .box {
+    max-width: 969px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    .details {
+      margin: 0 20px;
+      .product-name {
+        position: relative;
+        font-size: 28px;
+        font-weight: 600;
+        margin: 10px 0;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 50%;
+          background: red;
+          height: 3px;
+          bottom: -15%;
+          left: 0%;
+        }
+      }
+      .btn-add-cart {
+        padding: 10px 15px;
+        margin: 15px 0;
+        border: 1px solid crimson;
+        border-radius: 7px;
+        background: white;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease;
+        &:hover {
+          background: crimson;
+          color: white;
+        }
+      }
+    }
+  }
+}

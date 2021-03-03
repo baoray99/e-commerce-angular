@@ -1,0 +1,31 @@
+.nav-btn {
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  // max-width: 1024, 1376, 969, 1200, 992
+  .btn-cate {
+    padding: 10px 5px;
+    margin-left: auto;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: white;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    &:hover {
+      color: crimson;
+      transform: translateY(-2px);
+    }
+  }
+  .btn-cate.active {
+    box-shadow: 5px 5px 14px -4px rgba(145, 145, 145, 1);
+    font-size: 20px;
+    color: white;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    background: crimson;
+  }
+}
