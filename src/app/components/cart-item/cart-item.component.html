@@ -1,0 +1,19 @@
+<div class="item" (mouseover)="isHovered = true" (mouseout)="isHovered = false">
+  <div class="col-left">
+    <img
+      src="{{ item.image }}"
+      alt="product_imgae"
+      height="100px"
+      width="100px"
+    />
+    <div class="details">
+      <p><span>Product's name: </span>{{ item.name }}</p>
+      <p><span>Price: </span>{{ item.price | currency }}</p>
+    </div>
+  </div>
+  <div class="icon">
+    <div class="icon-delete" [ngClass]="{ active: isHovered }" (click)="deleteItem(item)">
+      <i class="far fa-trash-alt"></i>
+    </div>
+  </div>
+</div>

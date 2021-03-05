@@ -1,0 +1,104 @@
+.cart-list {
+  height: 100vh;
+  .btn-purchase {
+    text-align: center;
+    margin: 20px 0;
+    .myBtn {
+      padding: 10px 15px;
+      color: crimson;
+      background: white;
+      border: 1px solid crimson;
+      border-radius: 7px;
+      transition: all 0.3s ease;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        background: crimson;
+        color: white;
+      }
+    }
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40vh;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    transition: all 0.3s ease;
+  }
+  .active {
+    display: block;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 7px;
+    width: 25%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    .modal-header {
+      font-family: "Ubuntu";
+      padding: 2px 16px;
+      background-color: crimson;
+      color: white;
+      border-radius: 7px 7px 0 0;
+      text-align: center;
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    /* Modal Body */
+    .modal-body {
+      padding: 2px 16px;
+      margin-top: 10px;
+      .row {
+        margin: 10px 0;
+      }
+      .button {
+        padding: 5px 10px;
+        margin: 10px 0;
+        color: crimson;
+        background: white;
+        border-radius: 7px;
+        outline: none;
+        border: 1px solid crimson;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background: crimson;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@keyframes animatetop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

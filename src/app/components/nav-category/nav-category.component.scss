@@ -13,7 +13,6 @@
     border: none;
     background: white;
     cursor: pointer;
-
     transition: all 0.3s ease;
     &:hover {
       color: crimson;
@@ -21,11 +20,8 @@
     }
   }
   .btn-cate.active {
-    box-shadow: 5px 5px 14px -4px rgba(145, 145, 145, 1);
     font-size: 20px;
-    color: white;
-    border: 1px solid crimson;
-    border-radius: 10px;
-    background: crimson;
+    color: crimson;
+    border-bottom: 3px solid crimson;
   }
 }

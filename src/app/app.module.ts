@@ -11,6 +11,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { NavCategoryComponent } from './components/nav-category/nav-category.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { CartComponent } from './components/cart/cart.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' },
@@ -27,6 +29,8 @@ const appRoutes: Routes = [
     NavCategoryComponent,
     ProductItemComponent,
     CartComponent,
+    FooterComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule,

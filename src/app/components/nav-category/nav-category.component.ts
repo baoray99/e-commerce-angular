@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Category, CategoryButton } from 'src/app/models/category.models';
 import { ProductService } from 'src/app/services/product.service';
-import { Router, NavigationStart } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-nav-category',
@@ -26,10 +26,14 @@ export class NavCategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.subscribe((path) => {
-      if (path instanceof NavigationStart) {
+      // if (path instanceof NavigationStart) {
+      //   this.path = path.url;
+      // }
+      if (path instanceof NavigationEnd) {
         this.path = path.url;
       }
+      //cham bat su kien khi path thay doi
+      // console.log('path', path);
     });
-    //cham bat su kien khi path thay doi
   }
 }

@@ -1,0 +1,35 @@
+.item {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  height: 120px;
+  .col-left {
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    .details {
+      margin-left: 15px;
+    }
+  }
+  .icon {
+    width: 100px;
+    text-align: center;
+    visibility: hidden;
+    .icon-delete {
+      font-size: 30px;
+      color: crimson;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+    .active {
+      visibility: visible;
+    }
+  }
+}

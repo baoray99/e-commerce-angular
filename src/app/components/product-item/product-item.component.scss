@@ -3,8 +3,8 @@
   height: 280px;
   margin: 20px 0 0 20px;
   border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 5px 5px 14px -4px rgba(145, 145, 145, 1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,12 @@
   }
   &:hover {
     transform: scale(1.05, 1.05);
+    box-shadow: 5px 5px 14px -4px rgba(145, 145, 145, 1);
   }
   .detail {
     padding: 0 20px;
   }
-  a{
+  a {
     font-size: 18px;
     font-weight: 600;
     color: black;

@@ -1,8 +1,9 @@
 .container {
-  display: block;
+  height: 100vh;
   .box {
     max-width: 969px;
-    margin: 0 auto;
+    display: block;
+    margin: 30px auto;
     height: auto;
     display: flex;
     align-items: center;

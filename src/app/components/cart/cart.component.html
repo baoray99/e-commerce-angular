@@ -1,5 +1,32 @@
-<div *ngIf="cart$" class="cart-items">
-  <div class="item" *ngFor="let item of cart$ | async">
-    <p>{{ item.name }}</p>
+<div class="cart-list">
+  <div *ngFor="let item of cart$ | async">
+    <app-cart-item [item]="item"></app-cart-item>
+  </div>
+  <div class="btn-purchase" *ngIf="(cart$ | async)?.length > 0">
+    <!-- muon check observable thi phai co async -->
+    <button class="myBtn" (click)="openModal()">Purchase</button>
+  </div>
+  <div class="modal" [ngClass]="{ active: isActive }">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h2>Checkout</h2>
+      </div>
+      <div class="modal-body">
+        <div class="form-checkout">
+          <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <label for="name"> Name: </label>
+              <input id="name" type="text" formControlName="name" />
+            </div>
+            <div class="row">
+              <label for="address"> Address: </label>
+              <input id="address" type="text" formControlName="address" />
+            </div>
+            <button class="button" type="submit">Purchase</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
