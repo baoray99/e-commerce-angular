@@ -1,5 +1,5 @@
 .cart-list {
-  height: 100vh;
+  height: auto;
   margin-top: 90px;
   .btn-purchase {
     text-align: center;
@@ -91,6 +91,9 @@
       }
     }
   }
+}
+.cart-list-null{
+  height: 100vh;
 }
 @keyframes animatetop {
   from {

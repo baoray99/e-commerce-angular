@@ -1,4 +1,4 @@
-<div class="cart-list">
+<div class="cart-list" [ngClass]="{'cart-list-null': (cart$ | async)?.length < 3}">
   <div *ngFor="let item of cart$ | async">
     <app-cart-item [item]="item"></app-cart-item>
   </div>
