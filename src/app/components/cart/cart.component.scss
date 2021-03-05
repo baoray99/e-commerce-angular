@@ -1,5 +1,6 @@
 .cart-list {
   height: 100vh;
+  margin-top: 90px;
   .btn-purchase {
     text-align: center;
     margin: 20px 0;
@@ -21,7 +22,7 @@
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 9; /* Sit on top */
     padding-top: 40vh;
     left: 0;
     top: 0;

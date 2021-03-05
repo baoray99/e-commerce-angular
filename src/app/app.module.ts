@@ -13,6 +13,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 import { CartComponent } from './components/cart/cart.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { BacktopComponent } from './components/backtop/backtop.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     CartComponent,
     FooterComponent,
     CartItemComponent,
+    BacktopComponent,
   ],
   imports: [
     BrowserModule,
