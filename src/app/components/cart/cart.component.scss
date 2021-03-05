@@ -23,7 +23,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 9; /* Sit on top */
-    padding-top: 40vh;
+    padding-top: 30vh;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -39,7 +39,6 @@
   .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
     border: 1px solid #888;
     border-radius: 7px;
     width: 25%;
